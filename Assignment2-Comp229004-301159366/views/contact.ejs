@@ -1,0 +1,30 @@
+<%/* File name: Assignment1-Comp229004-301159366, Student’s Name: Fouad Ouardi, StudentID: 301159366, and Date 2022/June/04 */%>
+<% include partials/header.ejs %>
+<link rel="stylesheet" href="\stylesheets\Contact.css" />
+<script src='\javascripts\Home.js'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_DaMiBvLYDvMJxofTwGCVP");
+    })();
+</script>
+  <div class="container" >
+    <div> 
+        <% include partials/content.ejs %>
+      <p style="margin-top: 1em ;"> You could contact me by email at: <%= contact %>! Or just leave me a message bellow:</p>
+      <div class="form" onsubmit="SendMail()" style="margin-top: 5em; margin-left:5em;">
+        <div>
+            <label for="Name">Your name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Smith" required><br><br>
+
+            <label for="Message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Message sent directly to my email. Please don't spam!" required></textarea><br><br>
+
+            <button class="send" onclick="SendMail()">Send</button>
+        </div>
+
+    </div>
+    </div>
+  </div>
+
+<% include partials/footer.ejs %>

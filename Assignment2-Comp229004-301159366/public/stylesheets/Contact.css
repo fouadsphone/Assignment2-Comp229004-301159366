@@ -1,0 +1,33 @@
+input[type=text],#message {
+    border: 3px solid grey;
+    width: 30em;
+    background: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline:none;
+}
+textarea {
+    border: 3px solid grey;
+    width: 30em;
+    background: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    resize:none;
+    height: 2em;
+}
+
+.send{
+    border: 3px solid grey;
+    background: none;
+    color: grey;
+
+    padding:0.5em 0.75em;
+    border-radius:15px;
+    margin-left: 14em;
+}
+label{
+    margin-bottom: 0.5em;
+}
